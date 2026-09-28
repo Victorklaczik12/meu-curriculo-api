@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio & Curricular Analytics | Engenheiro de Software</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Fonte Inter via Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Desenvolvedor de Software</h1>
+            <p class="subtitle">Especializado em Back-End, APIs RESTful, Python, Java & Banco de Dados SQL</p>
+            <div class="hero-buttons">
+                <a href="#contato" class="btn btn-primary">Falar Comigo</a>
+                <a href="#projetos" class="btn btn-secondary">Ver Projetos</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Painel de Métricas (Analytics) -->
+        <section class="analytics-card">
+            <h2>📈 Métricas da Aplicação (Live API)</h2>
+            <div class="metrics-grid">
+                <div class="metric-box">
+                    <span class="metric-number" id="total-visitas">0</span>
+                    <span class="metric-label">Visualizações do Perfil</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-number" id="total-mensagens">0</span>
+                    <span class="metric-label">Mensagens Recebidas</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Mim -->
+        <section class="card">
+            <h2>Sobre Mim</h2>
+            <p>
+                Bacharel em Engenharia de Software focado na construção de sistemas escaláveis, APIs RESTful e otimização de banco de dados relacional. Experiência prática na modelagem de regras de negócio, testes de integração e arquitetura em nuvem (AWS).
+            </p>
+        </section>
+
+        <!-- Competências Técnicas -->
+        <section class="card">
+            <h2>Competências Técnicas</h2>
+            <div class="skills-tags">
+                <span class="tag">Python</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Java / Spring Boot</span>
+                <span class="tag">SQL (PostgreSQL / SQLite)</span>
+                <span class="tag">SQLAlchemy / ORM</span>
+                <span class="tag">Git & GitHub</span>
+                <span class="tag">Docker</span>
+                <span class="tag">AWS Cloud</span>
+            </div>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section class="card" id="contato">
+            <h2>Envie uma Mensagem</h2>
+            <form id="form-contato">
+                <div class="form-group">
+                    <label for="nome">Seu Nome / Recrutador:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Ex: Maria Silva">
+                </div>
+                <div class="form-group">
+                    <label for="email">Seu E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="Ex: maria@empresa.com">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem / Proposta:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensagem via API</button>
+            </form>
+            <div id="feedback-mensagem" class="feedback-hidden"></div>
+        </section>
+   </main>
+
+<footer>
+    <p>© 2026 - Desenvolvido com Python (FastAPI), SQLAlchemy e SQLite.</p>
+</footer>
+
+<!-- Importação do Script JS -->
+<script src="/static/script.js"></script>
+
+</body>
+</html>
