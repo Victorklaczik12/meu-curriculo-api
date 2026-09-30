@@ -51,6 +51,28 @@ Uma aplicação completa que combina um portfólio interativo no frontend com um
 ### **Passo a Passo**
 
 1. **Clonar o repositório:**
-   ```bash
-   git clone [https://github.com/Victorklaczik12/meu-curriculo-api.git](https://github.com/Victorklaczik12/meu-curriculo-api.git)
+   
+   git clone https://github.com/Victorklaczik12/meu-curriculo-api.git
    cd meu-curriculo-api
+
+2. **Criar e ativar o ambiente virtual:**
+    
+# Windows
+    python -m venv venv
+    .\venv\Scripts\activate
+
+# Linux/macOS
+    python3 -m venv venv
+    source venv/bin/activate 
+
+3. **Instalar as dependências:**
+    
+    pip install -r requirements.txt
+
+4. **executar o servidor:**
+    
+    uvicorn main:app --reload
+
+5. **Aceder no navegador:**
+    Aplicação: http://127.0.0.1:8000
+    Documentação Swagger: http://127.0.0.1:8000/docs
